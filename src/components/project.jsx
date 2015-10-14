@@ -1,0 +1,37 @@
+var React = require('react');
+
+module.exports = React.createClass({
+	render: function() {
+		return <div className='project'>
+			<div className='title'>
+				<h1>{this.props.title}</h1>
+				<h2>- {this.props.subtitle}</h2>
+			</div>
+			<div className='image'>
+				<img src={this.props.img} />
+			</div>
+			<div className='tags'>
+				{this.renderTags()}
+			</div>
+			<p>{this.props.description}</p>
+			<div className='links'>
+				{this.renderLinks()}
+			</div>
+		</div>
+	},
+	renderTags: function() {
+		return this.props.tags.map(function(tag) {
+			return <span key={tag}>{tag}</span>
+		});
+	},
+	renderLinks: function() {
+		return this.props.links.map(function(link) {
+			return <a 
+				href={link.href} 
+				key={link.title}
+				className={link.title}
+				>
+				{link.title}</a>
+		})
+	}
+});

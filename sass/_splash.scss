@@ -1,0 +1,74 @@
+$color-accent: #03A9F4;
+$icon-size: 50px;
+
+.splash {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: white;
+
+	width: 100%;
+	height: 100vh;
+	padding-top: 20vh;
+
+	background: url('http://i.imgur.com/VAtHs7w.jpg');
+  background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	h1 { 
+		font-size: 4em;
+		margin: 0;
+	}
+	p { 
+		text-transform: uppercase; 
+		font-size: 1.1em;
+	}
+
+	.highlight { color: $color-accent; }
+
+	.bar { 
+		margin: 10px auto;
+		height: 2px;
+		width: 80px;
+		background-color: white;
+	}
+
+	.links {
+		margin-top: 50px;
+
+		.codepen {
+			background-color: white;
+		}
+
+		.linkedin {
+			background-color: #0077B5;
+
+			span { 
+				font-family: Helvetica, sans-serif;
+				font-weight: 700;
+				font-size: 40px;
+				color: white;
+			}
+		}
+
+		.link {
+			display: inline-block;
+			overflow: hidden;
+			width: $icon-size;
+			height: $icon-size;
+			margin: 0 10px;
+			border-radius: 25px;
+			transition: all .5s ease;
+			
+			&:hover { opacity: 0.7; }	
+
+			img {
+				position: relative;
+				width: $icon-size*1.5;
+				left: -$icon-size/4;
+				top: -$icon-size/4;
+			}
+		}
+	}
+}
