@@ -15,19 +15,21 @@
 	height: 300px;
 	margin: 50px auto;
 	color: #040404;
+	font-family: Helvetica, sans-serif;
 	background-color: white;
 	border-radius: 10px;
 
 	.title {
 		text-align: left;
 		padding-top: 5px;
-		h1 { 
+		h3 { 
 			margin: 0 15px 0 12px;
 			font-size: 3em;
+			font-weight: 300;
 			display: inline;
 		}
 
-		h2 {
+		h4 {
 			font-size: 1.2em;
 			color: #0b0b0b;
 			position: relative;

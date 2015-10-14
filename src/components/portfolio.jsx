@@ -54,10 +54,10 @@ var projectData = [
 module.exports = React.createClass({
 	render: function() {
 		return <div className='portfolio'>
-			<h2>Projects</h2>
-			<ul>
+			<h2 className='title'>Things I've Made</h2>
+			<div>
 				{this.renderProjects()}
-			</ul>
+			</div>
 		</div>
 	},
 	renderProjects: function() {

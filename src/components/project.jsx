@@ -4,8 +4,8 @@ module.exports = React.createClass({
 	render: function() {
 		return <div className='project'>
 			<div className='title'>
-				<h1>{this.props.title}</h1>
-				<h2>- {this.props.subtitle}</h2>
+				<h3>{this.props.title}</h3>
+				<h4>- {this.props.subtitle}</h4>
 			</div>
 			<div className='image'>
 				<img src={this.props.img} />
