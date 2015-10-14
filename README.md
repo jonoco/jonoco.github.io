@@ -1,3 +1,3 @@
-# _scaffold
+# Personal portfolio
 
-a simple scaffolding stucture to help bootstrap new projects
+[Hosted here](http://jonoco.github.io/portfolio/#/)
