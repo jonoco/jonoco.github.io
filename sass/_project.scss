@@ -41,6 +41,7 @@
 	p {
 		clear: left;
 		text-align: left;
+		max-width: 450px;
 		margin: 10px 10px;
 	}
 
@@ -50,7 +51,7 @@
 		top: -30px;
 		margin: 0 10px;
 		height: 200px;
-		width: 250px;
+		max-width: 250px;
 		overflow: hidden;
 		img {	
 			height: 200px;

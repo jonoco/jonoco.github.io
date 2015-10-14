@@ -10,10 +10,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   width: 100%;
   height: 80vh;
-  padding-top: 20vh;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
+  padding-top: 20vh; }
   .splash h1 {
     font-size: 4em;
     margin: 0; }
@@ -179,6 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   .project p {
     clear: left;
     text-align: left;
+    max-width: 450px;
     margin: 10px 10px; }
   .project .image {
     float: right;
@@ -186,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
     top: -30px;
     margin: 0 10px;
     height: 200px;
-    width: 250px;
+    max-width: 250px;
     overflow: hidden; }
     .project .image img {
       height: 200px; }
