@@ -1,0 +1,6 @@
+src
+node_modules
+sass
+.DS_Store
+main.js
+style.css
