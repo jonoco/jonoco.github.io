@@ -1,5 +1,4 @@
 $color-accent: #03A9F4;
-$icon-size: 50px;
 
 .splash {
 	text-align: center;
@@ -32,43 +31,5 @@ $icon-size: 50px;
 		height: 2px;
 		width: 80px;
 		background-color: white;
-	}
-
-	.links {
-		margin-top: 50px;
-
-		.codepen {
-			background-color: white;
-		}
-
-		.linkedin {
-			background-color: #0077B5;
-		
-			span { 
-				font-family: Helvetica, sans-serif;
-				font-weight: 700;
-				font-size: 40px;
-				color: white;
-			}
-		}
-
-		.link {
-			display: inline-block;
-			overflow: hidden;
-			width: $icon-size;
-			height: $icon-size;
-			margin: 0 10px;
-			border-radius: 25px;
-			transition: all .5s ease;
-			
-			&:hover { opacity: 0.7; }	
-			a { text-decoration: none; }
-			img {
-				position: relative;
-				width: $icon-size*1.5;
-				left: -$icon-size/4;
-				top: -$icon-size/4;
-			}
-		}
 	}
 }

@@ -1,6 +1,8 @@
 var React = require('react');
 var Portfolio = require('./portfolio');
 var Splash = require('./splash');
+var Contact = require('./contact');
+var Footer = require('./footer');
 
 module.exports = React.createClass({
 	render: function() {
@@ -19,6 +21,8 @@ module.exports = React.createClass({
 		return ( <div>
 				<Splash />
 				<Portfolio />
+				<Contact />
+				<Footer />
 			</div>
 		);
 	}
