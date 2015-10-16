@@ -1,4 +1,26 @@
-$color-accent: #03A9F4;
+.anim-fadeup {
+	position: relative;
+	animation-name: fadeup;
+	animation-duration: 2s;
+
+	@keyframes fadeup {
+		0% {
+			opacity: 0; 
+			top: 100px;
+		}
+
+		50% {
+			opacity: 0; 
+			top: 100px;
+		}
+
+		100% {
+			opacity: 1;
+			top: 0;
+		}
+	}
+
+}
 
 .splash {
 	text-align: center;
@@ -25,11 +47,9 @@ $color-accent: #03A9F4;
 	}
 
 	.highlight { color: $color-accent; }
-
 	.bar { 
-		margin: 10px auto;
-		height: 2px;
-		width: 80px;
-		background-color: white;
+		margin: 10px auto; 
+		background-color: #ffffff;
 	}
+	.links { @extend .anim-fadeup; }
 }

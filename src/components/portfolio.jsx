@@ -43,7 +43,7 @@ var projectData = [
 		tags: ['Swift', 'SpriteKit'],
 		links: [
 			{
-				title: 'apple',
+				title: 'app store',
 				href: 'https://appsto.re/i6SH3xx'
 			}
 		],
@@ -54,7 +54,7 @@ var projectData = [
 module.exports = React.createClass({
 	render: function() {
 		return <div className='portfolio'>
-			<h2 className='title'>Selected projects</h2>
+			<h2>Selected projects</h2>
 			<div>
 				{this.renderProjects()}
 			</div>

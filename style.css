@@ -3,6 +3,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
+.anim-fadeup, .splash .links {
+  position: relative;
+  animation-name: fadeup;
+  animation-duration: 2s; }
+
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    top: 100px; }
+  50% {
+    opacity: 0;
+    top: 100px; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+
 .splash {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -24,9 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #03A9F4; }
   .splash .bar {
     margin: 10px auto;
-    height: 2px;
-    width: 80px;
-    background-color: white; }
+    background-color: #ffffff; }
 
 .transition, .hexagon figure, .hexagon figure::before, .hexagon figure::after {
   transition: all 0.5s ease; }
@@ -117,7 +131,8 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio h2 {
     margin: 20px auto;
     font-size: 3em;
-    font-weight: 300; }
+    font-weight: 300;
+    color: #03A9F4; }
 
 .live {
   background-color: #EBAD3F; }
@@ -125,11 +140,11 @@ h1, h2, h3, h4, h5, h6 {
 .github {
   background-color: #4DA4EB; }
 
-.apple {
+.app-store {
   background-color: #C7676C; }
 
 .project {
-  width: 80vh;
+  max-width: 700px;
   height: 300px;
   margin: 50px auto;
   color: #040404;
@@ -173,10 +188,10 @@ h1, h2, h3, h4, h5, h6 {
       padding: 3px 8px;
       background-color: #D8EBEB;
       border-radius: 10px; }
-  .project .links {
+  .project .buttons {
     clear: both;
     width: 100%; }
-    .project .links a {
+    .project .buttons a {
       float: right;
       margin: 0 10px;
       padding: 5px 8px;
@@ -185,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
       color: white;
       text-decoration: none;
       font-size: 1.3em; }
-      .project .links a:hover {
+      .project .buttons a:hover {
         opacity: 0.7; }
 
 .links {
@@ -223,10 +238,15 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
   margin: 0 10px 100px 0;
   font-family: 'Open Sans', sans-serif; }
-  .contact p {
+  .contact a {
+    text-decoration: none;
     font-family: Garamond, serif;
     font-weight: 600;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    color: #03A9F4; }
+  .contact .bar {
+    margin: 10px 5px;
+    background-color: #03A9F4; }
 
 .footer {
   clear: both;
@@ -238,6 +258,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Helvetica, serif;
     font-weight: 300;
     padding: 30px 40px; }
+
+.bar {
+  height: 2px;
+  width: 80px;
+  background-color: black; }
 
 body {
   background-color: #fafafa;

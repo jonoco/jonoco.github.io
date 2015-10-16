@@ -14,7 +14,7 @@ module.exports = React.createClass({
 				{this.renderTags()}
 			</div>
 			<p>{this.props.description}</p>
-			<div className='links'>
+			<div className='buttons'>
 				{this.renderLinks()}
 			</div>
 		</div>
@@ -29,7 +29,7 @@ module.exports = React.createClass({
 			return <a 
 				href={link.href} 
 				key={link.title}
-				className={link.title}
+				className={link.title.replace(' ', '-')}
 				>
 				{link.title}</a>
 		})

@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
+@import 'variables';
+
 @import 'reset';
 @import 'splash';
 @import 'hexagon';
@@ -9,6 +11,7 @@
 @import 'links';
 @import 'contact';
 @import 'footer';
+@import 'bar';
 
 body {
   background-color: #fafafa;

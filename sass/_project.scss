@@ -6,12 +6,12 @@
 	background-color: #4DA4EB;	
 }
 
-.apple {
+.app-store {
 	background-color: #C7676C;
 }
 
 .project {
-	width: 80vh;
+	max-width: 700px;
 	height: 300px;
 	margin: 50px auto;
 	color: #040404;
@@ -69,7 +69,7 @@
 		}
 	}
 
-	.links {
+	.buttons {
 		clear: both;
 		width: 100%;
 		a {
