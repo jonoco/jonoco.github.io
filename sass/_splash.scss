@@ -1,55 +1,23 @@
-.anim-fadeup {
-	position: relative;
-	animation-name: fadeup;
-	animation-duration: 2s;
-
-	@keyframes fadeup {
-		0% {
-			opacity: 0; 
-			top: 100px;
-		}
-
-		50% {
-			opacity: 0; 
-			top: 100px;
-		}
-
-		100% {
-			opacity: 1;
-			top: 0;
-		}
-	}
-
-}
-
 .splash {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	color: white;
-
-	width: 100%;
-	height: 80vh;
-	padding-top: 20vh;
 	
-	// background: linear-gradient(to bottom, #1B3842, #C3CFCE);
-	background: url('http://i.imgur.com/VAtHs7w.jpg');
-  background-position: center;
-	background-size: cover;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 60vh;
+	// padding: 150px 0 0 100px;
+	
+	background: linear-gradient(to bottom, #1B3842, #C3CFCE);
 
-	h1 { 
-		font-size: 4em;
-		margin: 0;
-	}
-	p { 
-		text-transform: uppercase; 
-		font-size: 1.1em;
-	}
+	p {margin: 0;}
 
-	.highlight { color: $color-accent; }
-	.bar { 
-		margin: 10px auto; 
-		background-color: #ffffff;
+	.description { 
+		padding: 150px 0 0 100px;
+		width: 50%;
+		text-align: left;
+		font-size: 1.4em;
 	}
-	.links { @extend .anim-fadeup; }
 }

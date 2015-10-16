@@ -1,0 +1,54 @@
+.list {
+	// display: inline-block;
+	float: left;
+	width: 200px;
+	margin: 50px 15px 10px 30px;
+	
+	.title {
+		display: inline-block;
+		font-size: 1.5em;
+		padding-bottom: 15px;
+		margin-bottom: 10px;
+		border-bottom: 3px solid black;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		font-size: 1.2em;
+		margin-bottom: 10px;	
+	}
+
+	a {
+		color: inherit;
+	}
+
+	.hover {
+		width: 80px;
+		&:hover {
+			text-decoration: underline;
+			.tooltip {
+				display: inline-block;
+				position: absolute;
+				color: #111111;
+				background: #f1f1f1;
+				border-radius: 4px;
+			}
+		}
+		.tooltip {
+			z-index: 10;
+			display: none; 
+			padding: 14px 20px;
+			margin-top: -30px; 
+			margin-left: 48px;
+			line-height: 16px;
+			span {
+				display: block;
+				margin: 8px 0;
+			}
+		}
+	}
+}
