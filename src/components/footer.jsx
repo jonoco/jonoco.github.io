@@ -6,16 +6,20 @@ var listsData = [
 		title: 'Projects',
 		items: [
 			{
+				title: 'jonoco.io',
+				link: 'project/jonoco'
+			},
+			{
 				title: 'Chirp',
-				link: '#'
+				link: 'project/chirp'
 			},
 			{
 				title: 'Kyra',
-				link: '#'
+				link: 'project/kyra'
 			},
 			{
 				title: 'Orb Orbital',
-				link: '#'
+				link: 'project/orborbital'
 			}
 		]
 	},
@@ -50,8 +54,11 @@ var listsData = [
 	{
 		title: 'Contact',
 		items: [
-			{ title: 'joshua.n.cox@gmail.com', email: 'joshua.n.cox@gmail.com' },
-			{ title: '123.456.7890' }	
+			{ title: 'joshua.n.cox@gmail.com', 
+				email: 'joshua.n.cox@gmail.com' 
+			},
+			{ title: '123.456.7890' },
+			{ social: true }	
 		]
 	}
 ];

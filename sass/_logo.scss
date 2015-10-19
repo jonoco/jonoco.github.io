@@ -6,8 +6,8 @@
 	text-align: left;
 	
 	position: fixed;
-	left: 25px;
-	top: 25px;
+	left: 5%;
+	top: 5%;
 	width: 27px;
 	padding: 5px;
 	overflow: hidden;
@@ -18,15 +18,13 @@
 
 	&:hover { 
 		width: 90px; 
-		.hidden {opacity: 1;}
+		.hidden { opacity: 1; }
 	}
 
-	a {
+	p { 
+		margin: 0; 
 		color: white;
-		text-decoration: none;
 	}
-
-	p { margin: 0; }
 
 	.hidden { 
 		transition: all .35s;

@@ -1,8 +1,8 @@
 .list {
-	// display: inline-block;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	width: 200px;
-	margin: 50px 15px 10px 30px;
+	margin: 30px 15px 10px 30px;
 	
 	.title {
 		display: inline-block;

@@ -7,7 +7,7 @@ var Logo = require('./logo');
 
 module.exports = React.createClass({
 	render: function() {
-		return <div>
+		return <div className='main'>
 			<Logo />
 			{this.content()}
 			<Footer />
