@@ -10,6 +10,7 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var babel = require('babel');
+var autoprefixer = require('gulp-autoprefixer');
 
 var notify = function(error) {
   var message = 'In: ';
@@ -78,6 +79,10 @@ gulp.task('sass', function () {
   gulp.src('./sass/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('./'));
 });
 
