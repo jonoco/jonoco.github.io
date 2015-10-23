@@ -25,12 +25,13 @@ var listsData = [
 	},
 	{
 		title: 'Skills',
+		link: 'skills',
 		items: [
 			{ title: 'HTML', 
 				hover: ['canvas', 'video'] 
 			},
 			{ title: 'CSS', 
-				hover: ['flex', 'animation'] 
+				hover: ['SASS', 'flex', 'animation'] 
 			},
 			{ title: 'JavaScript', 
 				hover: ['Angular', 'Node', 'React', 'Reflux'] 
