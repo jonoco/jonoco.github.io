@@ -6,11 +6,20 @@ var Link = ReactRouter.Link;
 module.exports = React.createClass({
 	render: function() {
 		return <div className='list'>
-			<div className='title'>{this.props.title}</div>
+			{this.renderTitle()}
 			<ul>
 				{this.renderItems()}
 			</ul>
 		</div>
+	},
+	renderTitle: function() {
+		if (this.props.link) {
+			return <Link className='title' to={this.props.link}>
+				{this.props.title}
+			</Link>
+		} else {
+			return <div className='title'>{this.props.title}</div>	
+		}
 	},
 	renderItems: function() {
 		return this.props.items.map(function(item) {
