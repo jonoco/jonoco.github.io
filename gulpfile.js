@@ -11,6 +11,7 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var babel = require('babel');
 var autoprefixer = require('gulp-autoprefixer');
+var minifyCSS = require('gulp-minify-css');
 
 var notify = function(error) {
   var message = 'In: ';
@@ -83,6 +84,7 @@ gulp.task('sass', function () {
       browsers: ['last 2 versions'],
       cascade: false
     }))
+    .pipe(minifyCSS())
     .pipe(gulp.dest('./'));
 });
 
