@@ -3,11 +3,14 @@ var Portfolio = require('./portfolio');
 var Splash = require('./splash');
 var Contact = require('./contact');
 var Footer = require('./footer');
+var Logo = require('./logo');
 
 module.exports = React.createClass({
 	render: function() {
-		return <div>
+		return <div className='main'>
+			<Logo />
 			{this.content()}
+			<Footer />
 		</div>
 	},
 	content: function() {
@@ -18,12 +21,8 @@ module.exports = React.createClass({
 		}
 	},
 	renderMain: function() {
-		return ( <div>
-				<Splash />
-				<Portfolio />
-				<Contact />
-				<Footer />
-			</div>
-		);
+		return <div>
+			<Splash />
+		</div>
 	}
 });

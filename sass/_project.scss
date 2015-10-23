@@ -11,58 +11,68 @@
 }
 
 .project {
-	max-width: 700px;
-	height: 300px;
-	margin: 50px auto;
+	width: 100%;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	color: #040404;
 	font-family: Helvetica, sans-serif;
-	background-color: white;
-	border-radius: 10px;
+	background: #e0e0e0;
 
-	.title {
-		text-align: left;
-		padding-top: 5px;
-		h3 { 
-			margin: 0 15px 0 12px;
-			font-size: 3em;
-			font-weight: 300;
-			display: inline;
-		}
-
-		h4 {
-			font-size: 1.2em;
-			color: #0b0b0b;
-			position: relative;
-			top: -5px;
-			display: inline;
-		}	
+	h1 { 
+		margin: 0 auto;
+		font-size: 3em;
+		font-weight: 300;
 	}
 
 	p {
-		clear: left;
 		text-align: left;
 		max-width: 450px;
-		margin: 10px 10px;
+		margin: 20px 10px;
 	}
 
-	.image {
-		float: right;
-		position: relative;
-		top: -30px;
-		margin: 0 10px;
-		height: 200px;
-		max-width: 250px;
-		overflow: hidden;
+	.navigation {
+		position: fixed;
+		right: 5%;
+		top: 5%;
+		button {
+			background-color: black;
+			border: none;
+			border-radius: none;
+			width: 50px;
+			height: 50px;
+			margin-right: 15px;
+			cursor: pointer;
+
+			color: white;
+			font-size: 1em;
+			font-weight: 500;
+			outline: 0;
+			&:hover { background-color: #515151; }
+			// &:focus { border: none; }
+		}
+	}
+
+	.images {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
 		img {	
-			height: 200px;
+			margin: 30px 0;
+			min-width: 300px;
+			width: 100%;
+			max-width: 800px;	
 		}
 	}
 
 	.tags {
-		float: left;
+		margin: 10px 0;
 		span {
 			display: inline-block;
-			margin: 25px 0 25px 30px;	
+			margin: 0 20px;	
 			padding: 3px 8px;
 			background-color: #D8EBEB;
 			border-radius: 10px;
@@ -70,10 +80,8 @@
 	}
 
 	.buttons {
-		clear: both;
-		width: 100%;
+		margin: 20px 0;
 		a {
-			float: right;
 			margin: 0 10px;
 			padding: 5px 8px;
 			min-width: 100px;
@@ -81,6 +89,7 @@
 			color: white;
 			text-decoration: none;
 			font-size: 1.3em;
+			cursor: pointer;
 			&:hover { opacity: 0.7; }
 		}
 	}

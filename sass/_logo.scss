@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+
+.logo {
+	font-family: 'PT Mono';
+	font-size: 22px;
+	text-align: left;
+	
+	position: fixed;
+	left: 5%;
+	top: 5%;
+	width: 27px;
+	padding: 5px;
+	overflow: hidden;
+	background-color: black;
+	border-radius: 5px;
+	transition: all .35s;
+	z-index: 1;
+
+	&:hover { 
+		width: 90px; 
+		.hidden { opacity: 1; }
+	}
+
+	p { 
+		margin: 0; 
+		color: white;
+	}
+
+	.hidden { 
+		transition: all .35s;
+		opacity: 0;
+	}
+}
