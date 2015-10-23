@@ -19,8 +19,11 @@ var projects = {
 			}
 		],
 		images: [
-			'http://i.imgur.com/Dbb94et.png',
-			'http://redqueencoder.com/wp-content/uploads/2014/11/the-legend-of-kyrandia-screen-4.jpg',
+			'assets/kyra0.png',
+			'assets/kyra1.png',
+			'assets/kyra2.png',
+			'assets/kyra3.png',
+			'assets/kyra4.png'
 		]
 	},
 	chirp: {
@@ -58,7 +61,7 @@ var projects = {
 		]
 	},
 	jonoco: {
-			title: 'jonoco.io',
+			title: 'jonoco.me',
 			description: '',
 			tags: ['JavaScript', 'React', 'Reflux'],
 			links: [
@@ -68,7 +71,7 @@ var projects = {
 				}
 			],
 			images: [
-				'http://i.imgur.com/6IqF7kq.png'
+				'./assets/jonoco@3x.png'
 			]
 		}
 }
