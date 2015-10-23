@@ -4,14 +4,14 @@ var	HashHistory = require('react-router/lib/hashhistory'); // keeps track of url
 var	Router = ReactRouter.Router; // decides what content to show
 var	Route = ReactRouter.Route;   // object with route info for router
 var	Main = require('./components/main');
-var Blog = require('./components/blog');
+var Skills = require('./components/skills');
 var Project = require('./components/project');
 
 module.exports = (
 	<Router history={new HashHistory}>
 		<Route path='/' component={Main}>
 			<Route path='project/:id' component={Project} />
-			<Route path='blog' component={Blog} />
+			<Route path='skills' component={Skills} />
 		</Route>
 	</Router>
 );
