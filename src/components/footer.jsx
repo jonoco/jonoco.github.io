@@ -6,7 +6,7 @@ var listsData = [
 		title: 'Projects',
 		items: [
 			{
-				title: 'jonoco.io',
+				title: 'jonoco.me',
 				link: 'project/jonoco'
 			},
 			{
