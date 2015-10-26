@@ -58,7 +58,8 @@ var listsData = [
 			{ title: 'joshua.n.cox@gmail.com', 
 				email: 'joshua.n.cox@gmail.com' 
 			},
-			{ title: '123.456.7890' },
+			{ title: '951.265.6757',
+				phone: '951-265-6757' },
 			{ social: true }	
 		]
 	}

@@ -38,3 +38,13 @@ body {
   }
 }
 
+.extra {
+  position: absolute;
+  margin-left: 6px;
+  // color: #999;
+  color: $color-accent;
+  &:before { content: '+';}
+  @keyframes bounce { to { margin-left: 20px;}}
+
+}
+

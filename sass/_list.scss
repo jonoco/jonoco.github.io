@@ -3,6 +3,8 @@
 	vertical-align: top;
 	width: 200px;
 	margin: 30px 15px 10px 30px;
+	font-family: 'Open Sans', serif;
+	font-weight: 300;
 	
 	.title {
 		display: inline-block;
@@ -18,12 +20,20 @@
 	}
 
 	li {
-		font-size: 1.2em;
+		font-size: 1.1em;
 		margin-bottom: 10px;	
 	}
 
 	a {
 		color: inherit;
+		text-decoration: none;
+		transition: all .3s ease;
+		&:hover {
+			color: $color-accent;
+			.extra {
+				animation: bounce .4s ease 0s infinite alternate;
+			}
+		}	
 	}
 
 	.hover {

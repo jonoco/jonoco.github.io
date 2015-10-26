@@ -16,6 +16,7 @@ module.exports = React.createClass({
 		if (this.props.link) {
 			return <Link className='title' to={this.props.link}>
 				{this.props.title}
+				<span className='extra'></span>
 			</Link>
 		} else {
 			return <div className='title'>{this.props.title}</div>	
@@ -29,6 +30,7 @@ module.exports = React.createClass({
 				return <li key={item.title}>
 					<Link to={item.link}>
 						{item.title}
+						<span className='extra'></span>
 					</Link>
 				</li>
 
@@ -37,6 +39,16 @@ module.exports = React.createClass({
 				return <li key={item.title}>
 					<a href={'mailto:' + item.email}>
 						{item.title}
+						<span className='extra'></span>
+					</a>
+				</li>
+
+			} else if (item.phone) {
+
+				return <li key={item.title}>
+					<a href={'tel:' + item.phone}>
+						{item.title}
+						<span className='extra'></span>
 					</a>
 				</li>
 
