@@ -61,20 +61,35 @@ var projects = {
 		]
 	},
 	jonoco: {
-			title: 'jonoco.me',
-			description: 'Using recent knowledge of React, I put together the latest iteration of my online portfolio.',
-			tags: ['JavaScript', 'React', 'Reflux'],
-			links: [
-				{
-					title: 'github',
-					link: 'https://github.com/jonoco/portfolio'
-				}
-			],
-			images: [
-				'./assets/jonoco@3x.png'
-			]
-		}
-}
+		title: 'jonoco.me',
+		description: 'Using recent knowledge of React, I put together the latest iteration of my online portfolio.',
+		tags: ['JavaScript', 'React', 'Reflux'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/portfolio'
+			}
+		],
+		images: [
+			'./assets/jonoco@3x.png'
+		]
+	},
+	fightfighter: {
+		title: 'Fight Fighter',
+		description: 'Registration and tournament management app. Allows participants to register for an event, and for an organizer to create participant divisions.',
+		tags: ['JavaScript', 'Angular', 'Firebase'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/FightFighters'
+			},
+			{
+				title: 'live',
+				link: 'https://fightfighter.firebaseapp.com/'
+			}
+		]
+	}
+};
 
 module.exports = Reflux.createStore({
 	listenables: [Actions],
