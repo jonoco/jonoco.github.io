@@ -62,7 +62,7 @@ var projects = {
 	},
 	jonoco: {
 			title: 'jonoco.me',
-			description: '',
+			description: 'Using recent knowledge of React, I put together the latest iteration of my online portfolio.',
 			tags: ['JavaScript', 'React', 'Reflux'],
 			links: [
 				{
