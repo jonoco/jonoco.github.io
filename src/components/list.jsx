@@ -52,6 +52,13 @@ module.exports = React.createClass({
 					</a>
 				</li>
 
+			} else if (item.href) {
+					return <li key={item.title}>
+						<a href={item.href}>
+							{item.title}
+							<span className='extra'></span>
+						</a>
+					</li>
 			} else if (item.hover) {
 
 				return <li key={item.title} className='hover'>
