@@ -8,7 +8,7 @@ module.exports = React.createClass({
 				<img src='./assets/github.png' />
 			</a>
 			<div className='link linkedin'>
-				<a href='https://www.linkedin.com/in/jncox'><span className='linkedin-text'>in</span></a>
+				<a href='https://www.linkedin.com/in/jonoco'><span className='linkedin-text'>in</span></a>
 			</div>
 			<div className='link codepen'>
 				<a href='http://codepen.io/jonoco/'><img src='./assets/codepen-ras.png' /></a>
