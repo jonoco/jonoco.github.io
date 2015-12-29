@@ -61,7 +61,7 @@ var listsData = [
 			{ title: '951.265.6757',
 				phone: '951-265-6757' },
 			{ title: 'resume',
-				href: 'https://drive.google.com/file/d/0Bwk-VyT0MrjgWE5lUHA3RHVtVGs/view?usp=sharing'
+				href: 'https://docs.google.com/document/d/1RKjQJai5m-H7IeCsR1Mm5GCqIHajO7OfQjUCxk4yYu0/edit?usp=sharing'
 			},
 			{ social: true }	
 		]
