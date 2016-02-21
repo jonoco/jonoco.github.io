@@ -1,7 +1,5 @@
 var React = require('react');
-var Portfolio = require('./portfolio');
 var Splash = require('./splash');
-var Contact = require('./contact');
 var Footer = require('./footer');
 var Logo = require('./logo');
 

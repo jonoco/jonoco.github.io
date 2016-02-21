@@ -12,6 +12,7 @@ module.exports = React.createClass({
 			title: '',
 			tags: [],
 			description: '',
+			paragraphs: [],
 			links: [],
 			images: []
 		}
@@ -27,7 +28,6 @@ module.exports = React.createClass({
 	},
 	render: function() {
 		return <div className='project'>
-
 			<h1>{this.state.title}</h1>
 
 			<div className='navigation'>
@@ -44,7 +44,11 @@ module.exports = React.createClass({
 			<div className='buttons'>
 				{this.renderLinks()}
 			</div>
-
+			
+			<div className="paragraphs">
+				{this.renderParagraphs(this.state.paragraphs)}
+			</div>
+			
 			<div className='images'>
 				{this.renderImages()}
 			</div>
@@ -66,9 +70,16 @@ module.exports = React.createClass({
 			</a>
 		})
 	},
+	renderParagraphs: function(paragraphs) {
+		if (!paragraphs) return;
+
+		return paragraphs.map(function(paragraph) {
+			return <p key={paragraph.length}>{paragraph}</p>
+		});
+	},
 	renderImages: function() {
 		return this.state.images.map(function(image) {
-			return <img src={image} />
+			return <img key={image} src={image} />
 		});
 	},
 	onClickNext: function() {
@@ -85,7 +96,8 @@ module.exports = React.createClass({
 		this.setState({
 			title: ProjectStore.project.title,
 			tags: ProjectStore.project.tags,
-			description : ProjectStore.project.description,
+			description: ProjectStore.project.description,
+			paragraphs: ProjectStore.project.paragraphs,
 			links: ProjectStore.project.links,
 			images: ProjectStore.project.images
 		});

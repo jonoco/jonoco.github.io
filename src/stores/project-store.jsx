@@ -1,12 +1,17 @@
 var Reflux = require('reflux');
 var Actions = require('../actions');
 
-var navi = ['jonoco','chirp','kyra','orborbital'];
+var navi = ['jonoco','chirp','kyra','orborbital']; // which projects to show on footer
 
 var projects = {
 	kyra: {
 		title: 'Kyra',
 		description: 'A Kyrandia remake using the Phaser framework.',
+		paragraphs: [
+			'This was one of my longest projects, at around 250 hours by the time I decided to finish it. Though it was grueling at times (particularly cleaning up the animations), working day and night, in cars and in bed, to implement concepts I had come up, it was very satisfying seeing it come together.',
+			'The project came with a large variety of firsts. One challenge was how to structure a large amount of data scalably, such as the grid data, used for path finding, or the room data, used to hold an ever expanding amount references to animations, background sprites, items, and events.',
+			'Another major challenge was working with the 24 year old art assets. I was lucky enough to locate a program that could decode the old proprietary packages that held original source artwork, but due to some problem, much of the art was corrupted. Entire animation sequences had to be recolored by hand, frame-by-frame. I had to carefully consider which animations were necessary, and which I could go without. Lucky some were less than a dozen frames, cleverly repeated and rearranged. Others weren\'t so simple, such as a 120 frame introduction of one of the characters. After cleaning, the animations were packaged into texture atlases, then carefully placed within a scene maddeningly pixel-perfect.'
+			],
 		tags: ['JavaScript', 'Phaser'],
 		links: [
 			{

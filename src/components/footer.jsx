@@ -1,8 +1,7 @@
 var React = require('react');
 var List = require('./list');
 
-var listsData = [
-	{
+var projectsData = {
 		title: 'Projects',
 		items: [
 			{
@@ -22,8 +21,8 @@ var listsData = [
 				link: 'project/orborbital'
 			}
 		]
-	},
-	{
+	};
+var skillsData = {
 		title: 'Skills',
 		link: 'skills',
 		items: [
@@ -43,40 +42,40 @@ var listsData = [
 				hover: ['mockups', 'icons'] 
 			}
 		]
-	},
-	{
+	};
+var rolesData = {
 		title: 'Roles',
 		items: [
 			{ title: 'Front-end Development'},
 			{ title: 'UX/UI'},
 			{ title: 'Mobile Development'}
 		]
-	},
-	{
+	};
+var contactData = {
 		title: 'Contact',
 		items: [
 			{ title: 'joshua.n.cox@gmail.com', 
 				email: 'joshua.n.cox@gmail.com' 
 			},
-			{ title: '951.265.6757',
-				phone: '951-265-6757' },
 			{ title: 'resume',
 				href: 'https://docs.google.com/document/d/1RKjQJai5m-H7IeCsR1Mm5GCqIHajO7OfQjUCxk4yYu0/edit?usp=sharing'
 			},
-			{ social: true }	
+			{ socialLinks: true }	
 		]
-	}
-];
+	};
+
+/**
+	instead of pushing a massive list into a list map, compose individual Lists
+	from individual data
+	*/
 
 module.exports = React.createClass({
 	render: function() {
 		return <div className='footer'>
-			{this.renderLists()}
+			<List{...projectsData} />
+			<List{...skillsData} />
+			<List{...rolesData} />
+			<List{...contactData} />
 		</div>
-	},
-	renderLists: function() {
-		return listsData.map(function(list) {
-			return <List {...list} />
-		});
 	}
 });

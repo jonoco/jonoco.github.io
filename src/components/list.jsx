@@ -1,5 +1,4 @@
 var React = require('react');
-var Links = require('./links');
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 
@@ -13,6 +12,8 @@ module.exports = React.createClass({
 		</div>
 	},
 	renderTitle: function() {
+		// Returns a linked title if a link is provided
+
 		if (this.props.link) {
 			return <Link className='title' to={this.props.link}>
 				{this.props.title}
@@ -23,6 +24,8 @@ module.exports = React.createClass({
 		}
 	},
 	renderItems: function() {
+		// Return a list item formatted to the type provided
+
 		return this.props.items.map(function(item) {
 
 			if (item.link) {
@@ -68,17 +71,32 @@ module.exports = React.createClass({
 						{this.renderTooltips(item.hover)}
 					</div>
 				</li>	
-			} else if (item.social) {
-				
+			} else if (item.socialLinks) {
+
 				return <li>
-					<Links />
+					{this.renderSocialLinks()}
 				</li>
 
 			} else {
-
 				return <li key={item.title}>{item.title}</li>	
 			}
 		}.bind(this));
+	},
+	renderSocialLinks: function() {
+		// Returns buttons for GitHub, Linkedin, and Codepen
+
+		return <div className='social-links'>
+				<a className='link github'
+				href='https://github.com/jonoco'>
+					<img src='./assets/github.png' />
+				</a>
+				<div className='link linkedin'>
+					<a href='https://www.linkedin.com/in/jonoco'><span className='linkedin-text'>in</span></a>
+				</div>
+				<div className='link codepen'>
+					<a href='http://codepen.io/jonoco/'><img src='./assets/codepen-ras.png' /></a>
+				</div>
+			</div>
 	},
 	renderTooltips: function(items) {
 		return items.map(function(item) {
