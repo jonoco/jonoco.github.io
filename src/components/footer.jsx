@@ -72,7 +72,6 @@ var contactData = {
 module.exports = React.createClass({
 	render: function() {
 		return <div className='footer'>
-			<List{...projectsData} />
 			<List{...skillsData} />
 			<List{...rolesData} />
 			<List{...contactData} />

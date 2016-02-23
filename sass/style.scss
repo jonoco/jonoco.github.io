@@ -14,9 +14,10 @@
 @import 'list';
 @import 'main';
 @import 'skills';
+@import 'portfolio';
 
 body {
-  background-color: #fafafa;
+  background-color: $color-background;
   margin: 0;
   min-width: 300px;
 }

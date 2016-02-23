@@ -1,10 +1,5 @@
-var Reflux = require('reflux');
-var Actions = require('../actions');
-
-var footerProjects = ['jonoco','chirp','kyra','orborbital']; // which projects to show on footer
-
-var projects = {
-	kyra: {
+module.exports = [
+	{
 		title: 'Kyra',
 		description: 'A Kyrandia remake using the Phaser framework.',
 		paragraphs: [
@@ -30,8 +25,7 @@ var projects = {
 			'assets/kyra3.png',
 			'assets/kyra4.png'
 		]
-	},
-	chirp: {
+	},{
 		title: 'Chirp',
 		description: 'An extremely simple chat room web app.',
 		tags: ['JavaScript', 'Angular', 'Firebase'],
@@ -49,8 +43,7 @@ var projects = {
 			'http://i.imgur.com/3dhZTlm.png',
 			'http://i.imgur.com/IfqxZXA.png'
 		]
-	},
-	orborbital: {
+	},{
 		title: 'Orb Orbital',
 		description: 'A puzzle game based around timing your shots.',
 		tags: ['Swift', 'SpriteKit'],
@@ -64,8 +57,7 @@ var projects = {
 			'http://i.imgur.com/4nHocnU.png',
 			'http://i.imgur.com/6LQsGD5.png',
 		]
-	},
-	jonoco: {
+	},{
 		title: 'jonoco.me',
 		description: 'Using recent knowledge of React, I put together the latest iteration of my online portfolio.',
 		tags: ['JavaScript', 'React', 'Reflux'],
@@ -78,8 +70,7 @@ var projects = {
 		images: [
 			'./assets/jonoco@3x.png'
 		]
-	},
-	fightfighter: {
+	},{
 		title: 'Fight Fighter',
 		description: 'Registration and tournament management app. Allows participants to register for an event, and for an organizer to create participant divisions.',
 		tags: ['JavaScript', 'Angular', 'Firebase'],
@@ -94,27 +85,4 @@ var projects = {
 			}
 		]
 	}
-};
-
-module.exports = Reflux.createStore({
-	listenables: [Actions],
-	getProject: function(id) {
-		this.project = projects[id] || null;
-		this.index = footerProjects.indexOf(id);
-		this.triggerChange();
-	},
-	nextProject: function() {
-		this.index++;
-		this.index = (this.index == footerProjects.length ? 0 : this.index);
-		this.getProject(footerProjects[this.index]);
-	},
-	prevProject: function() {
-		this.index--;
-		this.index = (this.index < 0 ? footerProjects.length-1 : this.index );
-		this.getProject(footerProjects[this.index]);
-	},
-	triggerChange: function() {
-		this.trigger('change', this.project);
-	}
-});
-
+];
