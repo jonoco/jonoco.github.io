@@ -84,5 +84,29 @@ module.exports = [
 				link: 'https://fightfighter.firebaseapp.com/'
 			}
 		]
+	}, {
+		title: 'PS3 Packages',
+		description: 'A convenient way to download PS3 game updates from Sony servers via your browser.',
+		tags: ['Node', 'Postgres', 'Jade', 'Heroku'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/PS3-Updates'
+			},
+			{
+				title: 'live',
+				link: 'https://ps3packages.herokuapp.com/'
+			}
+		]
+	},{
+		title: 'Faceplace',
+		description: 'A simple social networking site, built to get familiar with the LAMP stack.',
+		tags: ['JavaScript', 'LAMP'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/faceplace'
+			}
+		]
 	}
 ];
