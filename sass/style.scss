@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Open+Sans:400,300|PT+Mono);
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('assets/raleway_thin-webfont.eot');
+  src: url('assets/raleway_thin-webfont.woff') format('woff'),
+       url('assets/raleway_thin-webfont.ttf') format('truetype');
+}
+
 @import 'variables';
 
 @import 'reset';
@@ -15,6 +22,7 @@
 @import 'main';
 @import 'skills';
 @import 'portfolio';
+@import 'project-preview';
 
 body {
   background-color: $color-background;

@@ -2,29 +2,29 @@ var React = require('react');
 var ProjectData = require('../content/portfolio-data');
 
 module.exports = React.createClass({
-	getInitialState: function() {
-		return {
-			hover: false
-		}
-	},
 	render: function () {
 		return (
-			<div 
-				className='project-preview'
-				onMouseEnter={this.handleMouseEnter}
-				onMouseLeave={this.handleMouseLeave}
-			>
-				{this.state.hover ? this.inset() : this.image() }
+			<div className='project-preview'>
+				{this.date()}
+				<div className='title'>
+					<h1>{this.props.title}</h1> 
+					<h2 className='tags'>{this.tags(this.props.tags)}</h2>
+					<div className='links'>{this.links(this.props.links)}</div>
+				</div>
+				<div className='description'>{this.props.description}</div>
 			</div>
 		)
 	},
-	inset: function() {
+	date: function () {
+		var fromMonth = 'Jan';
+		var toMonth = 'Mar';
+		var year = 99;
 		return (
-			<div className='project'>
-				<h1 className='title'>{this.props.title}</h1> 
-				<h2 className='tags'>{this.tags(this.props.tags)}</h2>
-				<p className='description'>{this.props.description}</p>
-				<div className='links'>{this.links(this.props.links)}</div>
+			<div className='date'>
+				<div>{fromMonth}</div>
+				<div className='vert-bar'>|</div>
+				<div>{toMonth}</div>
+				<div className='year'>{year}</div>
 			</div>
 		)
 	},
@@ -42,11 +42,5 @@ module.exports = React.createClass({
 		var placeholder = {src:'assets/placeholder.png', alt:'placeholder image'};
 		var thumbnail = image || placeholder;
 		return <img src={thumbnail.src} alt={thumbnail.alt}/>
-	},
-	handleMouseEnter: function() {
-		this.setState({ hover: true });
-	},
-	handleMouseLeave: function() {
-		this.setState({ hover: false });
 	}
 });
