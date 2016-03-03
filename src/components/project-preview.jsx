@@ -6,8 +6,8 @@ module.exports = React.createClass({
 		return (
 			<div className='project-preview'>
 				{this.date(this.props.date)}
-				<div className='title'>
-					<h3>{this.props.title}</h3> 
+				<div className='details'>
+					<h3 className='title'>{this.props.title}</h3> 
 					<h4 className='tags'>{this.tags(this.props.tags)}</h4>
 					<div className='links'>{this.links(this.props.links)}</div>
 				</div>

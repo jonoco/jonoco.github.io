@@ -138,7 +138,7 @@ module.exports = [
 		}
 	},
 	{
-		title: 'Tutoring',
+		title: 'Tutor',
 		description: 'A tutoring brochure site for a small business owner.',
 		tags: ['JavaScript'],
 		links: [
