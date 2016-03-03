@@ -6,7 +6,7 @@ module.exports = React.createClass({
 	render: function () {
 		return (
 			<div className='portfolio'>
-				<h2>What I'm working on</h2>
+				<h2>What I've made</h2>
 				{this.renderPortfolioItems(ProjectData)}
 			</div>
 		)

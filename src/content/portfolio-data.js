@@ -1,5 +1,43 @@
 module.exports = [
 	{
+		title: 'Faceplace',
+		description: 'A simple social networking site, built to get familiar with the LAMP stack.',
+		tags: ['PHP', 'MySQL'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/faceplace'
+			}
+		],
+		date: {
+			from: 'January 2015',
+			to: 'February 2015'
+		}
+	},
+	{
+		title: 'Chirp',
+		description: 'An extremely simple chat room web app.',
+		tags: ['JavaScript', 'Angular', 'Firebase'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/chirp'
+			},
+			{
+				title: 'live',
+				link: 'https://chirpapp.firebaseapp.com/'
+			}
+		],
+		images: [
+			'http://i.imgur.com/3dhZTlm.png',
+			'http://i.imgur.com/IfqxZXA.png'
+		],
+		date: {
+			from: 'March 2015',
+			to: 'April 2015'
+		}
+	},
+	{
 		title: 'Kyra',
 		description: 'A Kyrandia remake using the Phaser framework.',
 		paragraphs: [
@@ -29,29 +67,23 @@ module.exports = [
 			from: 'April 2015',
 			to: 'May 2015'
 		}
-	},{
-		title: 'Chirp',
-		description: 'An extremely simple chat room web app.',
-		tags: ['JavaScript', 'Angular', 'Firebase'],
+	},
+	{
+		title: 'Design Builder',
+		description: 'A tangram style game based on constructing objects from blueprints.',
+		tags: ['Swift', 'SpriteKit'],
 		links: [
 			{
-				title: 'github',
-				link: 'https://github.com/jonoco/chirp'
-			},
-			{
-				title: 'live',
-				link: 'https://chirpapp.firebaseapp.com/'
+				title: 'app store',
+				link:'https://itunes.apple.com/us/app/design-builder/id1015150871?mt=8'
 			}
 		],
-		images: [
-			'http://i.imgur.com/3dhZTlm.png',
-			'http://i.imgur.com/IfqxZXA.png'
-		],
 		date: {
-			from: 'March 2015',
-			to: 'April 2015'
-		}
-	},{
+			from: 'June 2015',
+			to: 'July 2015' 
+		}	
+	},
+	{
 		title: 'Orb Orbital',
 		description: 'A puzzle game based around timing your shots.',
 		tags: ['Swift', 'SpriteKit'],
@@ -69,24 +101,8 @@ module.exports = [
 			from: 'July 2015',
 			to: 'October 2015'
 		}
-	},{
-		title: 'jonoco.me',
-		description: 'Using recent knowledge of React, I put together the latest iteration of my online portfolio.',
-		tags: ['JavaScript', 'React', 'Reflux'],
-		links: [
-			{
-				title: 'github',
-				link: 'https://github.com/jonoco/portfolio'
-			}
-		],
-		images: [
-			'./assets/jonoco@3x.png'
-		],
-		date: {
-			from: 'October 2015',
-			to: 'March 2016'
-		}
-	},{
+	},
+	{
 		title: 'Fight Fighter',
 		description: 'Registration and tournament management app. Allows participants to register for an event, and for an organizer to create participant divisions.',
 		tags: ['JavaScript', 'Angular', 'Firebase'],
@@ -104,37 +120,23 @@ module.exports = [
 			from: 'August 2015',
 			to: 'September 2015'
 		}
-	}, {
-		title: 'PS3 Packages',
-		description: 'A convenient way to download PS3 game updates from Sony servers via your browser.',
-		tags: ['Node', 'Postgres', 'Jade', 'Heroku'],
+	},
+	{
+		title: 'jonoco.me',
+		description: 'Using recent knowledge of React, I put together the latest iteration of my online portfolio.',
+		tags: ['JavaScript', 'React', 'Reflux'],
 		links: [
 			{
 				title: 'github',
-				link: 'https://github.com/jonoco/PS3-Updates'
-			},
-			{
-				title: 'live',
-				link: 'https://ps3packages.herokuapp.com/'
+				link: 'https://github.com/jonoco/portfolio'
 			}
 		],
+		images: [
+			'./assets/jonoco@3x.png'
+		],
 		date: {
-			from: 'February 2016',
+			from: 'October 2015',
 			to: 'March 2016'
-		}
-	},{
-		title: 'Faceplace',
-		description: 'A simple social networking site, built to get familiar with the LAMP stack.',
-		tags: ['JavaScript', 'LAMP'],
-		links: [
-			{
-				title: 'github',
-				link: 'https://github.com/jonoco/faceplace'
-			}
-		],
-		date: {
-			from: 'January 2015',
-			to: 'February 2015'
 		}
 	},
 	{
@@ -154,6 +156,44 @@ module.exports = [
 		date: {
 			from: 'October 2015',
 			to: 'November 2015'
+		}
+	},
+	{
+		title: 'Img Gal',
+		description: 'An image gallery app drawing assets from the Imgur API.',
+		tags: ['JavaScript', 'React', 'Reflux'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/Img-Gal'
+			},
+			{
+				title: 'link',
+				link: 'http://jonoco.github.io/Img-Gal/'
+			}
+		],
+		date: {
+			from: 'October 2015',
+			to: 'January 2016'
+		}
+	},
+	{
+		title: 'PS3 Packages',
+		description: 'A convenient way to download PS3 game updates from Sony servers via your browser.',
+		tags: ['Node', 'Postgres', 'Jade', 'Heroku'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/PS3-Updates'
+			},
+			{
+				title: 'live',
+				link: 'https://ps3packages.herokuapp.com/'
+			}
+		],
+		date: {
+			from: 'February 2016',
+			to: 'March 2016'
 		}
 	}
 ];
