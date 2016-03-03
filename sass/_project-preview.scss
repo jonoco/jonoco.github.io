@@ -1,6 +1,5 @@
 .project-preview {
 	width: 600px;
-	//height: 200px;
 	margin: 0 auto;
 	padding: 20px 5px 20px 0px;
 	position: relative;
@@ -14,14 +13,18 @@
 	align-items: stretch;
 
 	&:hover {
-		background-color: hsla(0, 0, 10%, 1);
+		background: hsl(0, 0, 5%);
+		.date {color: hsl(0, 0, 60%);}
+		.description {color: hsl(0, 0, 80%);}
+		.tags {color: hsl(0, 0, 70%);}
 	}
 
-	h1 {
+	h3 {
+		font-size: 2em;
 		color: hsl(0, 0, 90%);
 	}
 
-	h2 {
+	h4 {
 		font-size: 10px;
 	}
 
@@ -36,6 +39,7 @@
 		font-size: 2em;
 		width: 60px;
 		margin-right: 30px;
+		transition: .85s all ease;
 		.vert-bar {
 			font-size: 12px;
 			margin: 6px 0;
@@ -53,11 +57,13 @@
 		width: 300px;
 		font-size: 1.2em;
 		color: hsl(0, 0, 70%);
+		transition: .35s all ease;
 	}
 
 	.tags {
 		font-size: .8em;
 		margin-top: 8px;
+		transition: 1.35s all ease;
 		span {
 			margin-right: 5px;
 		}
@@ -70,7 +76,7 @@
 			color: $color-accent;
 			text-decoration: none;
 			margin-right: 12px;
-			transition: .35s all ease;
+			transition: .25s all ease;
 			&:hover {color: hsl(0,0,80%);}
 		}
 	}

@@ -24,7 +24,11 @@ module.exports = [
 			'assets/kyra2.png',
 			'assets/kyra3.png',
 			'assets/kyra4.png'
-		]
+		],
+		date: {
+			from: 'April 2015',
+			to: 'May 2015'
+		}
 	},{
 		title: 'Chirp',
 		description: 'An extremely simple chat room web app.',
@@ -42,7 +46,11 @@ module.exports = [
 		images: [
 			'http://i.imgur.com/3dhZTlm.png',
 			'http://i.imgur.com/IfqxZXA.png'
-		]
+		],
+		date: {
+			from: 'March 2015',
+			to: 'April 2015'
+		}
 	},{
 		title: 'Orb Orbital',
 		description: 'A puzzle game based around timing your shots.',
@@ -56,7 +64,11 @@ module.exports = [
 		images: [
 			'http://i.imgur.com/4nHocnU.png',
 			'http://i.imgur.com/6LQsGD5.png',
-		]
+		],
+		date: {
+			from: 'July 2015',
+			to: 'October 2015'
+		}
 	},{
 		title: 'jonoco.me',
 		description: 'Using recent knowledge of React, I put together the latest iteration of my online portfolio.',
@@ -69,7 +81,11 @@ module.exports = [
 		],
 		images: [
 			'./assets/jonoco@3x.png'
-		]
+		],
+		date: {
+			from: 'October 2015',
+			to: 'March 2016'
+		}
 	},{
 		title: 'Fight Fighter',
 		description: 'Registration and tournament management app. Allows participants to register for an event, and for an organizer to create participant divisions.',
@@ -83,7 +99,11 @@ module.exports = [
 				title: 'live',
 				link: 'https://fightfighter.firebaseapp.com/'
 			}
-		]
+		],
+		date: {
+			from: 'August 2015',
+			to: 'September 2015'
+		}
 	}, {
 		title: 'PS3 Packages',
 		description: 'A convenient way to download PS3 game updates from Sony servers via your browser.',
@@ -97,7 +117,11 @@ module.exports = [
 				title: 'live',
 				link: 'https://ps3packages.herokuapp.com/'
 			}
-		]
+		],
+		date: {
+			from: 'February 2016',
+			to: 'March 2016'
+		}
 	},{
 		title: 'Faceplace',
 		description: 'A simple social networking site, built to get familiar with the LAMP stack.',
@@ -107,6 +131,29 @@ module.exports = [
 				title: 'github',
 				link: 'https://github.com/jonoco/faceplace'
 			}
-		]
+		],
+		date: {
+			from: 'January 2015',
+			to: 'February 2015'
+		}
+	},
+	{
+		title: 'Tutoring',
+		description: 'A tutoring brochure site for a small business owner.',
+		tags: ['JavaScript'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/tutor'
+			},
+			{
+				title: 'link',
+				link: 'http://pamtutoring.com/'
+			}
+		],
+		date: {
+			from: 'October 2015',
+			to: 'November 2015'
+		}
 	}
 ];

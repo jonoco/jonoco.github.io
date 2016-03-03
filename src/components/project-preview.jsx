@@ -5,26 +5,27 @@ module.exports = React.createClass({
 	render: function () {
 		return (
 			<div className='project-preview'>
-				{this.date()}
+				{this.date(this.props.date)}
 				<div className='title'>
-					<h1>{this.props.title}</h1> 
-					<h2 className='tags'>{this.tags(this.props.tags)}</h2>
+					<h3>{this.props.title}</h3> 
+					<h4 className='tags'>{this.tags(this.props.tags)}</h4>
 					<div className='links'>{this.links(this.props.links)}</div>
 				</div>
 				<div className='description'>{this.props.description}</div>
 			</div>
 		)
 	},
-	date: function () {
-		var fromMonth = 'Jan';
-		var toMonth = 'Mar';
-		var year = 99;
+	date: function (date) {
+		var fromMonth = date.from.slice(0, 3); 
+		var fromYear = date.from.slice(-2);
+		var toMonth = date.to.slice(0, 3);
+		var toYear = date.to.slice(-2);
+
 		return (
 			<div className='date'>
-				<div>{fromMonth}</div>
+				<div>{fromMonth} {fromYear}</div>
 				<div className='vert-bar'>|</div>
-				<div>{toMonth}</div>
-				<div className='year'>{year}</div>
+				<div>{toMonth} {toYear}</div>
 			</div>
 		)
 	},
