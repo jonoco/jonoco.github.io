@@ -64,15 +64,9 @@ var contactData = {
 		]
 	};
 
-/**
-	instead of pushing a massive list into a list map, compose individual Lists
-	from individual data
-	*/
-
 module.exports = React.createClass({
 	render: function() {
 		return <div className='footer'>
-			<List{...projectsData} />
 			<List{...skillsData} />
 			<List{...rolesData} />
 			<List{...contactData} />

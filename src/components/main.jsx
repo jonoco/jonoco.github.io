@@ -2,6 +2,7 @@ var React = require('react');
 var Splash = require('./splash');
 var Footer = require('./footer');
 var Logo = require('./logo');
+var Portfolio = require('./portfolio');
 
 module.exports = React.createClass({
 	render: function() {
@@ -21,6 +22,7 @@ module.exports = React.createClass({
 	renderMain: function() {
 		return <div>
 			<Splash />
+			<Portfolio />
 		</div>
 	}
 });

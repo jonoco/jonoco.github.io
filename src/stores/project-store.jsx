@@ -1,7 +1,7 @@
 var Reflux = require('reflux');
 var Actions = require('../actions');
 
-var navi = ['jonoco','chirp','kyra','orborbital']; // which projects to show on footer
+var footerProjects = ['jonoco','chirp','kyra','orborbital']; // which projects to show on footer
 
 var projects = {
 	kyra: {
@@ -100,18 +100,18 @@ module.exports = Reflux.createStore({
 	listenables: [Actions],
 	getProject: function(id) {
 		this.project = projects[id] || null;
-		this.index = navi.indexOf(id);
+		this.index = footerProjects.indexOf(id);
 		this.triggerChange();
 	},
 	nextProject: function() {
 		this.index++;
-		this.index = (this.index == navi.length ? 0 : this.index);
-		this.getProject(navi[this.index]);
+		this.index = (this.index == footerProjects.length ? 0 : this.index);
+		this.getProject(footerProjects[this.index]);
 	},
 	prevProject: function() {
 		this.index--;
-		this.index = (this.index < 0 ? navi.length-1 : this.index );
-		this.getProject(navi[this.index]);
+		this.index = (this.index < 0 ? footerProjects.length-1 : this.index );
+		this.getProject(footerProjects[this.index]);
 	},
 	triggerChange: function() {
 		this.trigger('change', this.project);
