@@ -9,7 +9,6 @@
 	width: 27px;
 	padding: 5px;
 	overflow: hidden;
-	background-color: black;
 	border-radius: 5px;
 	transition: all .35s;
 	z-index: 1;
@@ -25,7 +24,7 @@
 	}
 
 	.hidden { 
-		transition: all .35s;
+		transition: all .35s ease;
 		opacity: 0;
 	}
 }

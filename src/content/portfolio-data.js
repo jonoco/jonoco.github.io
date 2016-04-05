@@ -24,7 +24,7 @@ module.exports = [
 				link: 'https://github.com/jonoco/chirp'
 			},
 			{
-				title: 'live',
+				title: 'link',
 				link: 'https://chirpapp.firebaseapp.com/'
 			}
 		],
@@ -52,7 +52,7 @@ module.exports = [
 				link: 'https://github.com/jonoco/Kyra'
 			},
 			{
-				title: 'live',
+				title: 'link',
 				link: 'http://jonoco.github.io/Kyra/'
 			}
 		],
@@ -112,7 +112,7 @@ module.exports = [
 				link: 'https://github.com/jonoco/FightFighters'
 			},
 			{
-				title: 'live',
+				title: 'link',
 				link: 'https://fightfighter.firebaseapp.com/'
 			}
 		],
@@ -187,7 +187,7 @@ module.exports = [
 				link: 'https://github.com/jonoco/PS3-Updates'
 			},
 			{
-				title: 'live',
+				title: 'link',
 				link: 'https://ps3packages.herokuapp.com/'
 			}
 		],
@@ -206,7 +206,7 @@ module.exports = [
 				link: 'https://github.com/jonoco/NASA-Patents'
 			},
 			{
-				title: 'live',
+				title: 'link',
 				link: 'https://nasa-patents.herokuapp.com/'
 			}
 		],
