@@ -36,12 +36,7 @@ module.exports = React.createClass({
 	},
 	tags: function(tags) {
 		return tags.map(function(tag) {
-			return <span>{tag}</span>
+			return <div>{tag}</div>
 		});
-	},
-	image: function(image) {
-		var placeholder = {src:'assets/placeholder.png', alt:'placeholder image'};
-		var thumbnail = image || placeholder;
-		return <img src={thumbnail.src} alt={thumbnail.alt}/>
 	}
 });

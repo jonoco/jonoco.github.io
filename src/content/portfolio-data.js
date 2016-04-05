@@ -1,5 +1,20 @@
 module.exports = [
 	{
+		title: 'Loud and Bright',
+		description: 'Created as part of a senior research project while attending UCLA.',
+		tags: ['Wix'],
+		links: [
+			{
+				title: 'link',
+				link: 'http://loudandbright.wix.com/labp'
+			}
+		],
+		date: {
+			from: 'January 2013',
+			to: 'June 2013'
+		}
+	},
+	{
 		title: 'Faceplace',
 		description: 'A simple social networking site, built to get familiar with the LAMP stack.',
 		tags: ['PHP', 'MySQL'],
