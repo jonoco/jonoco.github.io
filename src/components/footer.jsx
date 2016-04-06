@@ -27,16 +27,13 @@ var skillsData = {
 		link: 'skills',
 		items: [
 			{ title: 'HTML', 
-				hover: ['canvas', 'video'] 
+				hover: ['canvas', 'video', 'html5'] 
 			},
 			{ title: 'CSS', 
-				hover: ['SASS', 'flex', 'animation'] 
+				hover: ['Sass', 'flex', 'animation'] 
 			},
 			{ title: 'JavaScript', 
-				hover: ['Angular', 'Node', 'React', 'Reflux'] 
-			},
-			{ title: 'Swift', 
-				hover: ['SpriteKit'] 
+				hover: ['Angular', 'Node', 'React', 'Redux'] 
 			},
 			{ title: 'Sketch', 
 				hover: ['mockups', 'icons'] 

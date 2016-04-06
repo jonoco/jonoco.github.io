@@ -7,7 +7,7 @@ module.exports = React.createClass({
 		return (
 			<div className='portfolio'>
 				<h2>What I've made</h2>
-				{this.renderPortfolioItems(ProjectData)}
+				{this.renderPortfolioItems(ProjectData.reverse())}
 			</div>
 		)
 	},
