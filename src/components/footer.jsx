@@ -43,9 +43,9 @@ var skillsData = {
 var rolesData = {
 		title: 'Roles',
 		items: [
-			{ title: 'Front-end Development'},
-			{ title: 'UX/UI'},
-			{ title: 'Mobile Development'}
+			{ title: 'Front-end'},
+			{ title: 'Mobile'},
+			{ title: 'Full-stack'}
 		]
 	};
 var contactData = {
