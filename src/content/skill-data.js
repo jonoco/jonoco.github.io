@@ -14,8 +14,9 @@ module.exports = [
 	{
 		title: 'frameworks',
 		list: [
-			{ title: 'Angular', score: 35 },
-			{ title: 'React', score: 15 }
+			{ title: 'Angular', score: 25 },
+			{ title: 'React', score: 45 },
+			{ title: 'Node', score: 30 }
 		]
 	},
 	{
@@ -42,6 +43,7 @@ module.exports = [
 		list: [
 			{ title: 'Gulp', score: 81 },
 			{ title: 'Browserify', score: 29 },
+			{ title: 'Webpack', score: 29 },
 			{ title: 'Sass', score: 85 }
 		]
 	},
@@ -49,7 +51,6 @@ module.exports = [
 		title: 'databases',
 		list: [
 			{ title: 'MySQL', score: 19 },
-			{ title: 'Parse', score: 31 },
 			{ title: 'Firebase', score: 31 },
 			{ title: 'SQLite', score: 13 },
 			{ title: 'PostgreSQL', score: 9 }

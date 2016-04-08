@@ -2,7 +2,7 @@ var React = require('react');
 var SkillData = require('../content/skill-data.js');
 
 module.exports = React.createClass({
-	componentDidUpdate: function() {
+	componentDidMount: function() {
 		window.scroll(0,0);
 	},
 	render: function() {

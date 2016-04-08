@@ -175,7 +175,7 @@ module.exports = [
 	},
 	{
 		title: 'Img Gal',
-		description: 'An image gallery app drawing assets from the Imgur API.',
+		description: 'An image gallery app pulling assets from the Imgur API.',
 		tags: ['JavaScript', 'React', 'Reflux'],
 		links: [
 			{
