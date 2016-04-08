@@ -7,6 +7,8 @@ module.exports = [
 			{ title: 'Swift', score: 51 },
 			{ title: 'PHP', score: 9 },
 			{ title: 'C', score: 8 },
+			{ title: 'Python', score: 28 },
+			{ title: 'Bash', score: 13 },
 			{ title: 'SQL', score: 25 },
 			{ title: 'C#', score: 14 }
 		]
