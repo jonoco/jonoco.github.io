@@ -12,6 +12,9 @@ var watch = require('gulp-watch');
 var babel = require('babel');
 var autoprefixer = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
+var uglify = require('gulp-uglify');
+var sourcemaps = require('gulp-sourcemaps');
+var buffer = require('vinyl-buffer');
 
 var notify = function(error) {
   var message = 'In: ';
@@ -40,17 +43,21 @@ var bundler = watchify(browserify({
   entries: ['./src/app.jsx'],
   transform: [reactify],
   extensions: ['.jsx'],
-  debug: true,
+  debug: false,
   cache: {},
   packageCache: {},
-  fullPaths: true
+  fullPaths: false
 }));
 
 function bundle() {
   return bundler
     .bundle()
-    .on('error', notify)
     .pipe(source('main.js'))
+    .pipe(buffer())
+    .on('error', notify)
+    .pipe(sourcemaps.init())
+      .pipe(uglify())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./'))
 };
 bundler.on('update', bundle)
