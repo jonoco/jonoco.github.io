@@ -8,8 +8,8 @@ module.exports = React.createClass({
 				{this.date(this.props.date)}
 				<div className='details'>
 					<h3 className='title'>{this.props.title}</h3> 
-					<h4 className='tags'>{this.tags(this.props.tags)}</h4>
-					<div className='links'>{this.links(this.props.links)}</div>
+					<h4 className='tags'>{this.renderTags(this.props.tags)}</h4>
+					<div className='links'>{this.renderLinks(this.props.links)}</div>
 				</div>
 				<div className='description'>{this.props.description}</div>
 			</div>
@@ -29,12 +29,12 @@ module.exports = React.createClass({
 			</div>
 		)
 	},
-	links: function(links) {
+	renderLinks: function(links) {
 		return links.map(function(link) {
-			return <a href={link.link}>{link.title}</a>	
+			return <a className='btn btn-primary-outline' href={link.link}>{link.title}</a>	
 		});
 	},
-	tags: function(tags) {
+	renderTags: function(tags) {
 		return tags.map(function(tag) {
 			return <div>{tag}</div>
 		});

@@ -1,3 +1,2 @@
-# Personal portfolio
-
-[Hosted here](http://jonoco.github.io/portfolio/#/)
+# Portfolio
+Personal portfolio.

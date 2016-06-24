@@ -87,12 +87,7 @@ module.exports = [
 		title: 'Design Builder',
 		description: 'A tangram style game based on constructing objects from blueprints.',
 		tags: ['Swift', 'SpriteKit'],
-		links: [
-			{
-				title: 'app store',
-				link:'https://itunes.apple.com/us/app/design-builder/id1015150871?mt=8'
-			}
-		],
+		links: [],
 		date: {
 			from: 'June 2015',
 			to: 'July 2015' 
@@ -102,12 +97,7 @@ module.exports = [
 		title: 'Orb Orbital',
 		description: 'A puzzle game based around timing your shots.',
 		tags: ['Swift', 'SpriteKit'],
-		links: [
-			{
-				title: 'app store',
-				link: 'https://itunes.apple.com/us/app/orb-orbital/id1025409624?mt=8'
-			}
-		],
+		links: [],
 		images: [
 			'http://i.imgur.com/4nHocnU.png',
 			'http://i.imgur.com/6LQsGD5.png',
@@ -228,6 +218,25 @@ module.exports = [
 		date: {
 			from: 'March 2016',
 			to: 'March 2016'
+		}
+	},
+	{
+		title: 'Daycare',
+		description: 'A brochure website for the Peekaboo Daycare center.',
+		tags: ['Bootstrap', 'Jade'],
+		links: [
+			{
+				title: 'github',
+				link: 'https://github.com/jonoco/daycare'
+			},
+			{
+				title: 'link',
+				link: 'http://jonoco.github.io/daycare/'
+			}
+		],
+		date: {
+			from: 'March 2016',
+			to: 'May 2016'
 		}
 	}
 ];

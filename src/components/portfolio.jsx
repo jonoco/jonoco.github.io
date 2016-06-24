@@ -1,23 +1,27 @@
-var React = require('react');
-var ProjectData = require('../content/portfolio-data').reverse();
-var ProjectPreview = require('./project-preview.jsx');
+import React, { Component } from 'react';
+import ProjectData from '../content/portfolio-data';
+import ProjectPreview from './project-preview.jsx';
 
-module.exports = React.createClass({
-	componentDidMount: function() {
-		window.scroll(0,0);
-	},
-	render: function () {
-		return (
+class Portfolio extends Component {
+	render() {
+		return(
 			<div className='portfolio'>
 				<h2>What I've made</h2>
-				{this.renderPortfolioItems(ProjectData)}
+				{this.renderPortfolioItems()}
 			</div>
-		)
-	},
-	renderPortfolioItems: function(projects) {
+		);
+	}
 
+	renderPortfolioItems() {
+		let i = 0;
+		const projects = ProjectData.reverse();
 		return projects.map(function(project) {
-			return <ProjectPreview {...project}/>
+			return <ProjectPreview {...project} key={i++}/>
 		});
 	}
-});
+}
+
+export default Portfolio;
+
+
+
