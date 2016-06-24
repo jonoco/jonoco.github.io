@@ -22,10 +22,10 @@ require('./stylesheets/main.scss');
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-  	<Router history={browserHistory}>
-  		<Route path='/' component={App}>
-  			<IndexRoute component={Home} />
-  		</Route>
-  	</Router>
+    <Router history={browserHistory}>
+      <Route path='/' component={App}>
+        <IndexRoute component={Home} />
+      </Route>
+    </Router>
   </Provider>
   , document.querySelector('.application'));
