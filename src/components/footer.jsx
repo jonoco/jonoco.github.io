@@ -15,15 +15,15 @@ class Footer extends Component {
 						</li>
 						<li>
 							<div className='social-links'>
-								<a className='link github' href='https://github.com/jonoco'>
-									<img src='./assets/github.png' />
+								<a className='link' href='https://github.com/jonoco'>
+									<img src='./assets/github.png' alt='github' />
 								</a>
-								<div className='link linkedin'>
-									<a href='https://www.linkedin.com/in/jonoco'><span className='linkedin-text'>in</span></a>
-								</div>
-								<div className='link codepen'>
-									<a href='http://codepen.io/jonoco/'><img src='./assets/codepen-ras.png' /></a>
-								</div>
+								<a className='link' href='https://www.linkedin.com/in/jonoco'>
+									<img src='./assets/linkedin.png' alt='linkedin' />
+								</a>
+								<a className='link' href='http://codepen.io/jonoco/'>
+									<img src='./assets/codepen.png' alt='codepen' />
+								</a>
 							</div>
 						</li>
 					</ul>
