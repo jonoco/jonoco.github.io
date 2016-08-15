@@ -129,7 +129,7 @@ module.exports = [
 	{
 		title: 'jonoco.me',
 		description: 'Using recent knowledge of React, I put together the latest iteration of my online portfolio.',
-		tags: ['JavaScript', 'React', 'Reflux'],
+		tags: ['JavaScript', 'React'],
 		links: [
 			{
 				title: 'github',
