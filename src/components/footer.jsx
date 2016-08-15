@@ -8,7 +8,7 @@ class Footer extends Component {
 					<h2>Contact</h2>
 					<ul>
 						<li>
-							<a href='mailto:joshua.n.cox@gmail.com'>joshua.n.cox@gmail.com</a>
+							<a href='mailto:hello@jonoco.me'>hello@jonoco.me</a>
 						</li>
 						<li>
 							<a href='https://docs.google.com/document/d/1RKjQJai5m-H7IeCsR1Mm5GCqIHajO7OfQjUCxk4yYu0/edit?usp=sharing'>resume</a>
