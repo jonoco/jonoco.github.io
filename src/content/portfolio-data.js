@@ -128,7 +128,7 @@ module.exports = [
 	},
 	{
 		title: 'jonoco.me',
-		description: 'Using recent knowledge of React, I put together the latest iteration of my online portfolio.',
+		description: 'My continually updated online portfolio.',
 		tags: ['JavaScript', 'React'],
 		links: [
 			{
@@ -141,7 +141,7 @@ module.exports = [
 		],
 		date: {
 			from: 'October 2015',
-			to: 'March 2016'
+			to: 'August 2016'
 		}
 	},
 	{

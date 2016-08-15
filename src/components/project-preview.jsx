@@ -1,5 +1,4 @@
 var React = require('react');
-var ProjectData = require('../content/portfolio-data');
 
 module.exports = React.createClass({
 	render: function () {
@@ -23,9 +22,9 @@ module.exports = React.createClass({
 
 		return (
 			<div className='date'>
-				<div>{fromMonth} {fromYear}</div>
-				<div className='vert-bar'>|</div>
 				<div>{toMonth} {toYear}</div>
+				<div className='vert-bar'>|</div>
+				<div>{fromMonth} {fromYear}</div>
 			</div>
 		)
 	},
