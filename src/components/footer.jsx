@@ -21,7 +21,7 @@ class Footer extends Component {
 								<a className='link' href='https://www.linkedin.com/in/jonoco'>
 									<img src='./assets/linkedin.png' alt='linkedin' />
 								</a>
-								<a className='link' href='http://codepen.io/jonoco/'>
+								<a className='link' href='http://codepen.io/jonoco'>
 									<img src='./assets/codepen.png' alt='codepen' />
 								</a>
 							</div>
