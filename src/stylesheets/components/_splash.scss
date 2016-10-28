@@ -7,7 +7,7 @@
 	position: relative;
 	top: 0;
 	width: 100%;
-	padding-bottom: 30px;
+	margin-bottom: 15px;
 	background-color: #1E1E20;
 
 	h1 {
@@ -26,12 +26,20 @@
 	}
 
 	.description { 
-		padding: 150px 0px 0 10px;
+		padding: 50px 0px 0 10px;
 		margin: 0 auto;
 		min-width: 350px;
 		max-width: 600px;
-		width: 50%;
+		width: 95%;
 		text-align: left;
 		font-size: 1.4em;
+	}
+
+	@include media-breakpoint-up(md) {
+		margin-bottom: 30px;
+		.description {
+			padding: 150px 0px 0 10px;
+			width: 50%;
+		}
 	}
 }
