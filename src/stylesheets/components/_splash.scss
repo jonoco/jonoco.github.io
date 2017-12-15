@@ -1,0 +1,45 @@
+.splash {
+	text-align: center;
+	font-family: 'Libre Baskerville', serif;
+	color: hsl( 0, 0, 50%);
+	font-size: 1.4em;
+	
+	position: relative;
+	top: 0;
+	width: 100%;
+	margin-bottom: 15px;
+	background-color: #1E1E20;
+
+	h1 {
+		font-size: 0.4em;
+		margin-bottom: 20px;
+	}
+
+	p {
+		margin: 0;
+		min-width: 240px;
+		max-width: 600px;
+	}
+
+	.emphasis {
+		color: hsl(0, 0, 100%);
+	}
+
+	.description { 
+		padding: 50px 0px 0 10px;
+		margin: 0 auto;
+		min-width: 350px;
+		max-width: 600px;
+		width: 95%;
+		text-align: left;
+		font-size: 1.4em;
+	}
+
+	@include media-breakpoint-up(md) {
+		margin-bottom: 30px;
+		.description {
+			padding: 150px 0px 0 10px;
+			width: 50%;
+		}
+	}
+}
