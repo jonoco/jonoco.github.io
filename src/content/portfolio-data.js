@@ -152,10 +152,6 @@ module.exports = [
 			{
 				title: 'github',
 				link: 'https://github.com/jonoco/tutor'
-			},
-			{
-				title: 'link',
-				link: 'http://pamtutoring.com/'
 			}
 		],
 		date: {

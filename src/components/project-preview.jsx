@@ -3,7 +3,7 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function () {
 		return (
-			<div className='project-preview'>
+			<div className='project-preview'>	
 				{this.date(this.props.date)}
 				<div className='details'>
 					<h3 className='title'>{this.props.title}</h3> 
