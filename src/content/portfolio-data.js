@@ -115,10 +115,6 @@ module.exports = [
 			{
 				title: 'github',
 				link: 'https://github.com/jonoco/FightFighters'
-			},
-			{
-				title: 'link',
-				link: 'https://fightfighter.firebaseapp.com/'
 			}
 		],
 		date: {
@@ -160,25 +156,6 @@ module.exports = [
 		}
 	},
 	{
-		title: 'Img Gal',
-		description: 'An image gallery app pulling assets from the Imgur API.',
-		tags: ['JavaScript', 'React', 'Reflux'],
-		links: [
-			{
-				title: 'github',
-				link: 'https://github.com/jonoco/Img-Gal'
-			},
-			{
-				title: 'link',
-				link: 'http://jonoco.github.io/Img-Gal/'
-			}
-		],
-		date: {
-			from: 'October 2015',
-			to: 'January 2016'
-		}
-	},
-	{
 		title: 'PS3 Packages',
 		description: 'A convenient way to download PS3 game updates from Sony servers via your browser.',
 		tags: ['Node', 'Postgres', 'Jade', 'Heroku'],
@@ -205,10 +182,6 @@ module.exports = [
 			{
 				title: 'github',
 				link: 'https://github.com/jonoco/NASA-Patents'
-			},
-			{
-				title: 'link',
-				link: 'https://nasa-patents.herokuapp.com/'
 			}
 		],
 		date: {
